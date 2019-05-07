@@ -1,1 +1,2 @@
-tests/test*
+tests/performance/test*
+tests/accuracy/test*
