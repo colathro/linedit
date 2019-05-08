@@ -1,6 +1,4 @@
-import fileinput
-
-def edit_line(file, line, newline):
+def edit(file, line, newline):
     with open(file, 'r') as r:
         fetch = r.readlines()
     assert len(fetch) >= line, f"File does not contain {str(line)} lines."
