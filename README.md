@@ -11,6 +11,7 @@ pip install linedit
 
 # usage
 
+Single line in a file:
 ```
 import linedit
 
@@ -18,9 +19,19 @@ config_file = '/Users/colathro/Development/config.cfg'
 target_line = 35
 new_line = 'verbose_trace = FALSE'
 
-# linedit.edit(filename, line_number, new_string)
 linedit.edit(config_file, target_line, new_line)
 ```
+
+
+Multiple lines in a file:
+```
+import linedit
+
+config_file = '/Users/colathro/Development/config.cfg'
+target_lines = [(1,'verbose_trace = FALSE'), (23,'database = MYSQL'), (11, 'CASHIER = Wendy'), (55, 'PASSWORD = CarlsJr5for$5')]
+
+linedit.medit(config_file, target_lines)
+``` 
 
 # performance
 
