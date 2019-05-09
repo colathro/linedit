@@ -1,2 +1,4 @@
 tests/performance/test*
 tests/accuracy/test*
+dist/
+linedit.egg-info/
