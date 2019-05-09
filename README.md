@@ -18,8 +18,8 @@ config_file = '/Users/colathro/Development/config.cfg'
 target_line = 35
 new_line = 'verbose_trace = FALSE'
 
-# lineedit.edit_line(filename, line_number, new_string)
-linedit.edit_line(config_file, target_line, new_line)
+# linedit.edit(filename, line_number, new_string)
+linedit.edit(config_file, target_line, new_line)
 ```
 
 # performance
