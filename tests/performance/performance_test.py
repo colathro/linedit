@@ -1,13 +1,13 @@
 import linedit
 
 def one_million():
-    linedit.edit_line('test_one_million.txt', 10, '55sasd5')
+    linedit.edit('test_one_million.txt', 10, '55sasd5')
 
 def one_hundred_thousand():
-    linedit.edit_line('test_one_hundred_thousand.txt', 10, '55sasd5')
+    linedit.edit('test_one_hundred_thousand.txt', 10, '55sasd5')
 
 def one_thousand():
-    linedit.edit_line('test_one_thousand.txt', 10, '55sasd5')
+    linedit.edit('test_one_thousand.txt', 10, '55sasd5')
 
 import time
 import random
