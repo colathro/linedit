@@ -24,3 +24,23 @@ def medit(file, container):
             else:
                 w.writelines(curline)
 
+def bufedit(file, number, line):
+    import os
+    tempfile = file + '.new'
+    with open(file, 'r') as r:
+        with open(tempfile, 'w') as w:
+            i = 0
+            while True:
+                i += 1
+                origline = r.readline()
+                if origline == '':
+                    break
+                if i == number:                             
+                    w.writelines(f"{line}\n")
+                else:
+                    w.writelines(origline)
+    try:
+        os.remove(file)
+        os.rename(tempfile, file)
+    except:
+        print('error')
